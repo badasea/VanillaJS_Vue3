@@ -8,7 +8,7 @@ Language - JavaScript(ES6), Html, Css, Node.js
 
 Front-end framework - Vue3.js
 
-API - NPM, Fetch-API
+API - NPM(Vue, Webpack, Babel), Fetch-API
 
 IDE - Visual Studio Code
 
