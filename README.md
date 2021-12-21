@@ -4,17 +4,17 @@
 
 # ⚙ 기술 스택 
 
-언어 - JavaScript
+Language - JavaScript, Html, Css
 
-프레임워크 - Vue3
+Front-end framework - Vue3.js
 
 IDE - Visual Studio Code
 
-개발 OS 환경 - 윈도우10
+Development OS environment. - Windows10
 
-형상 관리 - Github
+Configuration Management - Github
 
-디자인 - Material Ui, 부트스트랩
+Design framework - Material-Ui, Bootstrap
 
 # 💻 Project List
 ### 1. Todo-List
