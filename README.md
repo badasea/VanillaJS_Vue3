@@ -1,6 +1,6 @@
 # 👨‍💻 VanillaJS_Vue3_Study
 
-![image](https://user-images.githubusercontent.com/57929751/146916931-03fe309f-0fc3-4936-a80d-e7b764f104cf.png)
+![image](https://user-images.githubusercontent.com/57929751/146967604-3074122f-c285-4d33-bfa3-fde2bcabc309.png)
 
 # ⚙ Technology stack 
 
