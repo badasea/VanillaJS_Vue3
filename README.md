@@ -4,11 +4,11 @@
 
 # ⚙ Technology stack 
 
-Language - JavaScript, Html, Css
+Language - JavaScript(ES6), Html, Css, Node.js
 
 Front-end framework - Vue3.js
 
-API - Fetch-API
+API - NPM, Fetch-API
 
 IDE - Visual Studio Code
 
