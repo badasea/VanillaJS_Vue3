@@ -1,0 +1,77 @@
+* {
+    margin:0;
+    padding:0;
+    outline: none;
+}
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    color: #fff;
+    background: linear-gradient(5deg,#108dc7, #ef8e38);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-container {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.input-text {
+    width: 90%;
+    padding: 0.3em;
+    border: none;
+}
+.add-button {
+    width: 10%;
+    border: none;
+    background : #28324e;
+    color: #fff;
+    outline: none;
+}
+.add-button:hover {
+    cursor: pointer;
+    background: #333;
+}
+.list{
+    list-style: none;
+}
+.list li {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+    align-items: center;
+}
+.like {
+    flex: 1;
+}
+.item {
+    flex: 8;
+}
+.manage {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like i {
+    color: salmon;
+}
+.check {
+    color: #38ef7d
+}
+.clear {
+    color: salmon
+}
+.done .item {
+    text-decoration: line-through;
+}
+.done .check {
+    visibility: hidden;
+}
