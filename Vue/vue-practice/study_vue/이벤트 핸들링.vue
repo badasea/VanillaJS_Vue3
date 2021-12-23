@@ -2,6 +2,16 @@
   <div>
     <!-- 이벤트 핸들링 -->
     <h1>Hello {{ name }}</h1>
+    <button v-on:click="changeName">Change name</button>
+    <button v-on:mouseover="name = 'Code bada'" v-on:mouseleave="name = 'bada'">
+      Change name
+    </button>
+    <a v-on:click="movePage" href="https://naver.com">네이버로 이동</a>
+    <h2>{{ number }}</h2>
+    <button v-on:click="increment(1)">숫자 1증가</button>
+    <button v-on:click="decrement(1)">숫자 1감소</button>
+    <button v-on:click="increment(5)">숫자 5증가</button>
+    <button v-on:click="decrement(5)">숫자 5감소</button>
   </div>
 </template>
 

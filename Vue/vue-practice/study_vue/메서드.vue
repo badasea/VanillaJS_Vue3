@@ -1,7 +1,14 @@
 <template>
   <div>
-    <!-- 이벤트 핸들링 -->
-    <h1>Hello {{ name }}</h1>
+    <!-- 매서드 -->
+    <h1>Hello Vue</h1>
+    <h2>5년 뒤 : {{ add(5) }}</h2>
+    <h2>10년 뒤 : {{ add(10) }}</h2>
+    <h2>15년 뒤 : {{ add(15) }}</h2>
+    <h2>20년 뒤 : {{ add(20) }}</h2>
+    <h2>25년 뒤 : {{ add(25) }}</h2>
+    <h2>동갑의 10명이 있다면 나이 총 합은 {{ multiply(age) }}</h2>
+    <h2>{{ getTotalSocre(100) }}</h2>
   </div>
 </template>
 
@@ -9,26 +16,18 @@
 export default {
   name: "App",
   data() {
-    return { name: "bada", number: 0 };
+    return { age: 30 };
   },
   methods: {
-    changeName() {
-      this.name = "Code Bada";
+    add(num) {
+      console.log(num);
+      return this.age + num;
     },
-    movePage(e) {
-      e.preventDefault();
-      const check = confirm("페이지롤 이동하시겠습니까?");
-      if (check) {
-        console.log("page 이동");
-      } else {
-        console.log("페이지 이동 x");
-      }
+    multiply(num1, num2 = 10) {
+      return num1 * num2;
     },
-    increment(num) {
-      this.number += num;
-    },
-    decrement(num) {
-      this.number -= num;
+    getTotalSocre(num) {
+      return this.multiply(num, num);
     },
   },
 };
