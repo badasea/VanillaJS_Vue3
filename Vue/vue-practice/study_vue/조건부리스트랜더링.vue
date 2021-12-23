@@ -2,6 +2,19 @@
   <div>
     <!-- 조건부리스트랜더링 -->
     <h1>Hello Vue</h1>
+    <ul>
+      <li
+        v-for="(city, index) in cities.filter((c) => c.province === '경상도')"
+        :key="index"
+      >
+        {{ city.name }}
+      </li>
+    </ul>
+    <ul>
+      <template v-for="(city, index) in cities" :key="index">
+        <li v-if="city.province === '경상도'">{{ city.name }}</li>
+      </template>
+    </ul>
   </div>
 </template>
 
