@@ -8,7 +8,7 @@ Language - JavaScript(ES6), Html, Css, Node.js
 
 Front-end - Vue3.js
 
-API - NPM(Vue, Webpack, Babel), Fetch-API
+API - NPM(Vue, Webpack, Babel, Axios), Fetch-API
 
 IDE - Visual Studio Code
 
@@ -19,8 +19,11 @@ Configuration Management - Github
 Design framework - Material-Ui, Bootstrap
 
 # 💻 Project List
+
 ### 1. Todo-List
+
 <img src="https://user-images.githubusercontent.com/57929751/146915242-ca0c34af-19ef-48fd-bf13-c71deec18109.png" width="50%" height="50%" >
 
 ### 2. Typing-Game
+
 <img src="https://user-images.githubusercontent.com/57929751/146958777-c4fd111e-43e2-4743-8f74-e49125c22d35.png" width="50%" height="50%" >

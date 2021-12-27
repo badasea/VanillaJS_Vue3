@@ -1,77 +1,28 @@
 <template>
   <div>
-    <!-- component -->
-    <!-- <GreetingUser
-      :username="username"
-      :numberOfvisit="numberOfvisit"
-      :siteInfo="siteInfo"
-    /> -->
-    <!-- <GreetingUser /> -->
-    <!-- <button @click="changeName()">change</button> -->
-    <!-- <ul>
-      <li v-for="product in products" :key="product.id">{{ product }}</li>
-    </ul> -->
-
-    <!-- <ProductList :products="products" /> -->
-    <!-- <GreetingUser id="greeting" /> -->
-    <h1>Component</h1>
-    <button @click="displayDetail = true">show detail</button>
-    <DetailVue v-if="displayDetail" @closeDetail="close" @sendData="showData" />
+    <!-- HTTP Request -->
+    <h1>Hello Vue!!</h1>
+    <TodoList />
   </div>
 </template>
 
 <script>
-// import GreetingUser from "./components/GreetingUser.vue";
-// import ProductList from "./components/ProductList.vue";
-import DetailVue from "./components/DetailVue.vue";
+import TodoList from "./components/http/TodoList.vue";
 
 export default {
   name: "App",
   components: {
-    // GreetingUser,
-    // ProductList,
-    DetailVue,
+    TodoList,
+  },
+  provide() {
+    return {};
   },
   data() {
     return {
-      displayDetail: false,
-
-      products: [
-        {
-          id: 0,
-          name: "TV",
-          price: 500000,
-          company: "LG",
-        },
-        {
-          id: 1,
-          name: "Moniter",
-          price: 40000,
-          company: "Samsung",
-        },
-        {
-          id: 2,
-          name: "Iphone",
-          price: 70000,
-          company: "Apple",
-        },
-      ],
-      // username: "bada",
-      // numberOfvisit: undefined,
-      // siteInfo: undefined,
+      username: "bada",
     };
   },
-  methods: {
-    // changeName() {
-    //   this.username = "DDochi";
-    // },
-    close() {
-      this.displayDetail = false;
-    },
-    showData(data) {
-      console.log(data);
-    },
-  },
+  methods: {},
   directives: {},
   computed: {},
   watch: {},
