@@ -1,20 +1,16 @@
 <template>
   <div>
-    <!-- Mixins -->
+    <!-- LifeCycle -->
     <h1>Hello Vue!!</h1>
-    <Productstatus />
-    <FeeStatus />
-    <SavingStatus />
+    <parentcomponent />
   </div>
 </template>
 
 <script>
-import Productstatus from "./components/mixin/ProductStatus.vue";
-import FeeStatus from "./components/mixin/FeeStatus.vue";
-import SavingStatus from "./components/mixin/SavingStatus.vue";
+import parentcomponent from "./components/liftcycle/ParentComp.vue";
 export default {
   name: "App",
-  components: { Productstatus, FeeStatus, SavingStatus },
+  components: { parentcomponent },
   provide() {
     return {};
   },

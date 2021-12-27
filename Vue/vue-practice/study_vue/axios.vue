@@ -1,20 +1,19 @@
 <template>
   <div>
-    <!-- Mixins -->
+    <!-- HTTP Request -->
     <h1>Hello Vue!!</h1>
-    <Productstatus />
-    <FeeStatus />
-    <SavingStatus />
+    <TodoList />
   </div>
 </template>
 
 <script>
-import Productstatus from "./components/mixin/ProductStatus.vue";
-import FeeStatus from "./components/mixin/FeeStatus.vue";
-import SavingStatus from "./components/mixin/SavingStatus.vue";
+import TodoList from "./components/http/TodoList.vue";
+
 export default {
   name: "App",
-  components: { Productstatus, FeeStatus, SavingStatus },
+  components: {
+    TodoList,
+  },
   provide() {
     return {};
   },
