@@ -1,20 +1,17 @@
 <template>
   <div>
-    <!-- Mixins -->
+    <!-- Composition API -->
     <h1>Hello Vue!!</h1>
-    <Productstatus />
-    <FeeStatus />
-    <SavingStatus />
+    <Test />
   </div>
 </template>
 
 <script>
-import Productstatus from "./components/mixin/ProductStatus.vue";
-import FeeStatus from "./components/mixin/FeeStatus.vue";
-import SavingStatus from "./components/mixin/SavingStatus.vue";
+import Test from "./components/composition/TestComponent.vue";
+
 export default {
   name: "App",
-  components: { Productstatus, FeeStatus, SavingStatus },
+  components: { Test },
   provide() {
     return {};
   },
