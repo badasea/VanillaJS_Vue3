@@ -9,16 +9,35 @@
 </template>
 
 <script>
-import moneyMixin from "../../mixins/moneyMixins";
+// import moneyMixin from "../../mixins/moneyMixins";
+
+// export default {
+//   name: "savingtatus",
+//   mixins: [moneyMixin],
+
+//   data() {
+//     return {};
+//   },
+//   methods: {},
+// };
+import useMoney from "../../composables/useMoney";
 
 export default {
-  name: "savingtatus",
-  mixins: [moneyMixin],
-
-  data() {
-    return {};
+  name: "productstatus",
+  srtup() {
+    const { addMoney, totalMoney } = useMoney();
+    return {
+      addMoney,
+      totalMoney,
+    };
   },
-  methods: {},
+  // mixins: [moneyMixin],
+
+  // components: {},
+  // data() {
+  //   return {};
+  // },
+  // methods: {},
 };
 </script>
 

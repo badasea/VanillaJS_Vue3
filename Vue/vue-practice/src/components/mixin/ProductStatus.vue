@@ -9,17 +9,25 @@
 </template>
 
 <script>
-import moneyMixin from "../../mixins/moneyMixins";
+// import moneyMixin from "../../mixins/moneyMixins";
+import useMoney from "../../composables/useMoney";
 
 export default {
   name: "productstatus",
-  mixins: [moneyMixin],
-
-  components: {},
-  data() {
-    return {};
+  srtup() {
+    const { addMoney, totalMoney } = useMoney();
+    return {
+      addMoney,
+      totalMoney,
+    };
   },
-  methods: {},
+  // mixins: [moneyMixin],
+
+  // components: {},
+  // data() {
+  //   return {};
+  // },
+  // methods: {},
 };
 </script>
 

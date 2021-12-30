@@ -3,22 +3,33 @@
     <!-- <h2>{{ username }}</h2>
     <h2>{{ age }}</h2> -->
     <!-- <h2>{{ isHandsom }}</h2> -->
-    <h2>{{ name }}</h2>
-    <button @click="changeName">ChangeUserName</button>
+    <!-- <h2>{{ name }}</h2>
+    <button @click="chcdangeName">ChangeUserName</button>
     <h2>제품명: {{ itemName }}, 가격 {{ itemPrice }}</h2>
     <button @click="changeProduct">제품 바꾸기</button>
     <div>
       <input type="text" v-model="name" />
-    </div>
+    </div> -->
+    <h1>Hello LifeCycle</h1>
+    <!-- <input type="text" v-model="name" ref="inputRef" />
+    <Childcomp :firstname="Code" :lastname="bada" /> -->
+    <ProductStatus />
+    <FeeStatus />
+    <SavingStatus />
   </div>
 </template>
 
 <script>
 // import { reactive, toRefs } from "vue";
 import { ref, reactive, toRefs } from "vue";
+// import { onMounted } from "vue";
+import FeeStatus from "../mixin/FeeStatus.vue";
+import ProductStatus from "../mixin/ProductStatus.vue";
+import SavingStatus from "../mixin/SavingStatus.vue";
 
 export default {
   name: "TestComponent",
+  components: { FeeStatus, ProductStatus, SavingStatus },
   methods: {},
   //   data() {
   //     return {
@@ -41,6 +52,12 @@ export default {
     //   age: 50,
     //   job: "programmer",
     // });
+
+    // onMounted(() => {
+    //   inputRef.value.focus();
+    //   console.log("child mounted");
+    // });
+
     const name = ref("bada");
     function changeName() {
       name.value = "code,";
